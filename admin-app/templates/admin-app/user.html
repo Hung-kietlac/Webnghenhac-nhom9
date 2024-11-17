@@ -1,0 +1,53 @@
+{% extends "admin-app/navbar.html" %}
+
+{% load static %} 
+
+{% block main_content %}
+<link rel="stylesheet" href="{% static 'admin-app/css/user.css' %}">
+<div class="top">
+    <h1 class="text">Thông tin người dùng</h1>
+    <button class="add-user">Thêm người dùng</button>
+</div>
+
+<table class="user-table">
+    <thead>
+        <tr>
+            <th>Số thứ tự</th>
+            <th>Tên đăng nhập</th>
+            <th>Email</th>
+            <th>Hành động</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Kim</td>
+            <td>kim@gmail.com</td>
+            <td>
+                <button class="edit-button">Sửa</button>
+                <button class="delete-button">Xóa</button>
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Phượng</td>
+            <td>phuong@gmail.com</td>
+            <td>
+                <button class="edit-button">Sửa</button>
+                <button class="delete-button">Xóa</button>
+            </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Giang</td>
+            <td>giang@gmail.com</td>
+            <td>
+                <button class="edit-button">Sửa</button>
+                <button class="delete-button">Xóa</button>
+            </td>
+        </tr>
+        
+    </tbody>
+</table>
+
+{% endblock %}

@@ -18,12 +18,13 @@ from django.urls import path, include
 from app import views 
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', views.home, name='home'),
-    path('dangnhap/', views.dangnhap, name='dangnhap'),
-    path('dangky/', views.dangky, name='dangky'),
-    path('home/', views.home, name='home'),
-    path('danhsachnhac/', views.danhsachnhac, name='danhsachnhac'),
-    path('thuvien/', views.thuvien, name='thuvien'),
+    # path('admin/', admin.site.urls),
+    # path('', views.home, name='home'),
+    # path('dangnhap/', views.dangnhap, name='dangnhap'),
+    # path('dangky/', views.dangky, name='dangky'),
+    # path('home/', views.home, name='home'),
+    # path('danhsachnhac/', views.danhsachnhac, name='danhsachnhac'),
+    # path('thuvien/', views.thuvien, name='thuvien'),
     path('', include('app.urls')),
+    path('admin-app/', include('admin-app.urls')),
 ]
